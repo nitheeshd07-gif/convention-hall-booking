@@ -1,0 +1,313 @@
+/* ============================= */
+/*          GENERAL               */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111827;
+  color: #111827;
+}
+
+
+/* ============================= */
+/*          NAVBAR                */
+/* ============================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #111827;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================= */
+/*          HALLS PAGE            */
+/* ============================= */
+
+.halls-page {
+  padding: 40px;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.halls-page h1 {
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+
+/* ============================= */
+/*       HALLS CONTAINER          */
+/* ============================= */
+
+.halls-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+
+/* ============================= */
+/*          HALL CARD             */
+/* ============================= */
+
+.hall-card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.hall-card h2 {
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.hall-card p {
+  margin: 10px 0;
+  color: #374151;
+}
+
+
+/* ============================= */
+/*          BOOK BUTTON           */
+/* ============================= */
+
+.hall-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hall-card button:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* ============================= */
+/*         BOOKING PAGE           */
+/* ============================= */
+
+.booking-page {
+  width: 450px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  color: #111827;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.booking-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+
+/* ============================= */
+/*        BOOKING FORM            */
+/* ============================= */
+
+.booking-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-page label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.booking-page input {
+  padding: 12px;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  background-color: white;
+}
+
+.booking-page input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.booking-page input::placeholder {
+  color: #6b7280;
+}
+
+
+/* ============================= */
+/*       CONFIRM BUTTON           */
+/* ============================= */
+
+.booking-page button {
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.booking-page button:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* ============================= */
+/*       BOOKING HISTORY          */
+/* ============================= */
+
+.booking-history {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.booking-history h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* ============================= */
+/*        HOME PAGE               */
+/* ============================= */
+
+.home-page {
+  min-height: 100vh;
+  padding: 60px 30px;
+  text-align: center;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.home-page h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.home-page p {
+  font-size: 18px;
+  color: #374151;
+}
+
+
+/* ============================= */
+/*        MOBILE VIEW             */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .halls-page {
+    padding: 25px 15px;
+  }
+
+  .hall-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .booking-page {
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+  }
+
+  .home-page h1 {
+    font-size: 30px;
+  }
+}
+.booking-history {
+  padding: 40px;
+  text-align: center;
+}
+
+.booking-history h1 {
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.bookings-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.booking-card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.booking-card h2 {
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.booking-card p {
+  margin: 10px 0;
+  color: #374151;
+}
